@@ -11,6 +11,21 @@
   </head>
 
   <body ng-app="talk">
+
+    <form name="contactForm" method="post">
+      <div class="start">
+      <h3>If you have any concerns pleaase leave us a message:</h3>
+        <div class="fields">
+          <div class="col-md-6 form-group">
+            <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="text" name="fullName" ng-model="contactForm.fullName" placeholder="Full Name" required>
+          </div>
+          <div class="col-md-6 form-group">
+            <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="email" name="email" ng-model="contactForm.email" placeholder="Email Address" required>
+          </div>
+        </div>
+      </div>
+    </form>
+
     <div class="nav">
       <div class=".col-md-8 navTextLeft">
         <a href="index.html">HOME</a>
