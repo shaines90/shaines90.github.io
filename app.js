@@ -3,6 +3,7 @@ var app = angular.module("talk", [])
     var formData = {
       firstName: "default",
       lastName: "default",
+      fullName: "default",
       email: "default",
       phoneNumber: "default",
       degree: "default",
@@ -12,6 +13,10 @@ var app = angular.module("talk", [])
 
     $scope.save = function() {
       formData= $scope.myForm;
+    };
+
+    $scope.save = function() {
+      formData= $scope.contactForm;
     };
 
     $scope.submitForm = function() {
