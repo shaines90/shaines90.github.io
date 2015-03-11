@@ -217,6 +217,7 @@ input[type="radio"]:checked + span {
   max-width: 70%;
   margin: auto;
   margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .contactFields {
@@ -225,3 +226,10 @@ input[type="radio"]:checked + span {
   margin-top: 30px;
 }
 
+.companies {
+  max-width: 100%;
+}
+
+.company-row {
+
+}
