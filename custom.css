@@ -1,0 +1,219 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 0;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+a {
+  color: rgb(179,139,32);
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2em;
+  margin-top: 50px;
+  text-shadow: 2px 2px 8px #000;
+}
+
+h2 {
+  color: rgb(139,27,29);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin-bottom: -15px;
+}
+
+h3 {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+h4 {
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+h5 {
+  color: rgb(139,27,29);
+  font-size: 34px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.nav {
+  background-color: black;
+}
+.navTextLeft {
+  float: left;
+  margin-left: 100px;
+  padding: 15px 40px;
+}
+.navTextRight {
+  float: right;
+  margin-right: 100px;
+  padding: 15px 40px;
+}
+.contactNav {
+  margin-left: 50px;
+}
+
+.header {
+  background-color: rgb(139,27,29);
+  width: 100%;
+  padding-bottom: 5px;
+}
+.iconleft {
+  float: right;
+  max-width: 220px;
+}
+.iconcenter {
+  max-width: 240px;
+}
+.iconright {
+  float: left;
+  max-width: 220px;
+  margin-left: 35px;
+}
+
+.fields {
+  margin: auto;
+  margin-bottom: 75px;
+  text-align: center;
+  width: 80%;
+}
+
+.start {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 25px 50px;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+.potentialEmployers {
+  margin-top: 95px;
+}
+
+.education {
+  background-color: rgb(139,27,29);
+  padding: 50px;
+  height: 100%;
+  width: 100%;
+}
+.education h2 {
+  color: white;
+}
+.degree {
+  margin: auto;
+  max-width: 55%;
+}
+
+.dreamjob {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+/*Radio Button Styling*/
+input[type="radio"], input[type="checkbox"] {
+  display: none;
+}
+
+input[type="radio"] + span {
+  background-color: white;
+  border: 1px solid rgb(139,27,29);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px 40px;
+}
+
+input[type="radio"]:checked + span {
+  background-color: rgb(139,27,29);
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px 40px;
+}
+
+.radioSelect {
+  margin-bottom: 45px;
+  margin-top: 25px;
+}
+
+.form-control {
+  border: 1px solid rgb(139,27,29) !important;
+  border-radius: 0;
+  height: auto;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  max-width: 100%;
+  padding: 20px 40px !important;
+}
+
+.button {
+  background-color: rgb(139,27,29);
+  border: 1px solid rgb(139,27,29) !important;
+  color: white;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+  padding: 20px 40px !important;
+}
+
+.footer {
+  background-color: black;
+  height: 165px;
+  margin-top: 50px;
+}
+
+.lyceumLogo {
+  float: left;
+  margin-left: 100px;
+  margin-top: 30px;
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.talkpushLogo {
+  float: left;
+  margin-left: 50px;
+  margin-top: 50px;
+  max-height: 100px;
+  max-width: 150px;
+}
+
+.socialMedia {
+  float: right;
+  margin-right: 75px;
+  margin-top: 50px;
+}
+
+.tc {
+  text-align: left;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
