@@ -185,14 +185,15 @@ input[type="radio"]:checked + span {
 
 .footer {
   background-color: black;
+  bottom : 0;
   height: 165px;
   margin-top: 50px;
+  width: 100%;
 }
 
 .lyceumLogo {
   float: left;
   margin-left: 100px;
-  margin-top: 30px;
   max-height: 100px;
   max-width: 100px;
 }
@@ -200,7 +201,7 @@ input[type="radio"]:checked + span {
 .talkpushLogo {
   float: left;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 20px;
   max-height: 100px;
   max-width: 150px;
 }
@@ -208,7 +209,7 @@ input[type="radio"]:checked + span {
 .socialMedia {
   float: right;
   margin-right: 75px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .tc {
@@ -217,3 +218,10 @@ input[type="radio"]:checked + span {
   margin: auto;
   margin-bottom: 30px;
 }
+
+.contactFields {
+  margin: auto;
+  max-width: 600px;
+  margin-top: 30px;
+}
+

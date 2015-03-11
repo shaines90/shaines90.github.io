@@ -11,30 +11,49 @@
   </head>
 
   <body ng-app="talk">
-
     <form name="contactFormNg" method="post">
       <div class="start">
-      <h3>If you have any concerns please leave us a message:</h3>
-        <div class="fields">
-          <div class="col-md-6 form-group">
+      <h5>If you have any concerns, please leave us a message:</h5>
+        <div class="contactFields">
+          <div class="form-group">
             <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="text" name="fullName" ng-model="contactForm.fullName" placeholder="Full Name" required>
           </div>
-          <div class="col-md-6 form-group">
-            <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="email" name="email" ng-model="contactForm.email" placeholder="Email Address" required>
+          <div class="form-group">
+            <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="email" name="contactEmail" ng-model="contactForm.email" placeholder="Email Address" required>
           </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-textarea form-control-lg ng-pristine ng-invalid ng-invalid-required" type="textarea" name="contactContent" ng-model="contactForm.content" placeholder="Please Enter your Message Here..." required>
+            </textarea>
+          </div>
+          <input class="button" type="submit" value="SEND" />
         </div>
       </div>
     </form>
 
-    <div class="nav">
-      <div class=".col-md-8 navTextLeft">
-        <a href="index.html">HOME</a>
-        <a href="about-us.html" class="contactNav">ABOUT US</a>
+    <div class="footer">
+      <div class="nav">
+        <div class=".col-md-8 navTextLeft">
+          <a href="about-us.html">ABOUT US</a>
+          <a href="contact-us.html" class="contactNav">CONTACT US</a>
+        </div>
+        <div class=".col-md-4 navTextRight">
+          <a href="terms-and-conditions.html">TERMS & CONDITIONS</a>
+        </div>
       </div>
-      <div class=".col-md-4 navTextRight">
-        <a href="terms-and-conditions.html">TERMS & CONDITIONS</a>
+      <div class="logos">
+        <a href="http://www.lpu.edu.ph/"><img class="lyceumLogo" src="http://upload.wikimedia.org/wikipedia/en/1/1e/Seal_of_Lyceum_of_the_Philippines_University.svg" href=""></a>
+        <a href="http://www.talkpush.com"><img class="talkpushLogo" src="http://www.talkpush.com/wp-content/uploads/2014/12/logo-website-01.png"></a>
+      </div>
+
+      <div class="socialMedia">
+        <a href="https://www.facebook.com/letthetalenttalk"><img class="facebook" src="../../images/facebook-128.png" style="max-width: 60px;"></a>
+
+        <a href="https://twitter.com/Talkpush"><img class="twitter" src="../../images/twitter-128.png" style="max-width: 60px;"></a>
+
+        <a href="https://www.linkedin.com/company/talkpush"><img class="linkedin" src="../../images/linkedin-128.png" style="max-width: 60px;"></a>
       </div>
     </div>
+
 
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
