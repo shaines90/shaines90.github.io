@@ -1,0 +1,141 @@
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media screen and (max-width : 1200px) {
+
+    }
+    @media screen and (max-width : 1070px) {
+      .iconright {
+        float: center !important;
+      }
+
+    /* Medium Devices, Desktops */
+    @media screen and (max-width : 992px) {
+      .iconleft {
+        float: left;
+        max-width: 200px;
+      }
+      .iconright {
+        float: left;
+        max-width: 200px;
+      }
+      .iconcenter {
+        float: left;
+        margin-left: 70px;
+        max-width: 200px;
+      }
+      .dreamjob {
+        padding: 0;
+      }
+      .start {
+        padding: 0;
+      }
+      .potentialEmployers {
+        margin-top: 0 !important;
+      }
+      .fields {
+        margin-bottom: 5px;
+      }
+      input[type="radio"] + span {
+        float: left;
+      }
+      .radioSelect {
+        margin: 0;
+      }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media screen and (max-width : 768px) {
+      h4 {
+        font-size: 16px;
+        line-height: 1.3em;
+        margin: auto;
+        max-width: 80%;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .iconleft {
+        float: none !important;
+        margin-bottom: -30px;
+        margin-left: 0;
+        max-width: 150px;
+      }
+      .iconcenter {
+        float: none !important;
+        margin-left: 0;
+        max-width: 150px;
+      }
+      .iconright {
+        float: none !important;
+        margin-left: 0;
+        max-width: 150px;
+      }
+
+      .start {
+        padding: 0;
+      }
+      .potentialEmployers {
+        margin-top: 0 !important;
+      }
+
+      .degree {
+        max-width: 95%;
+      }
+
+      .dreamjob {
+        padding: 0;
+      }
+
+      .footer {
+        padding-top: 10px;
+      }
+      .lyceumLogo {
+        margin-left: 20px;
+        margin-top: 5px;
+        max-width: 55px;
+      }
+      .talkpushLogo {
+        margin-left: 20px;
+        margin-top: 20px;
+        max-height: 75px;
+        max-width: 75px;
+      }
+      .nav {
+        display: none;
+      }
+      .nav-media {
+        display: inline;
+        padding-top: 5px;
+        text-align: center;
+      }
+      .contactNav {
+        margin-left: 0;
+      }
+      .socialMedia {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      img.facebook {
+        max-width: 40px !important;
+      }
+      img.twitter {
+        max-width: 40px !important;
+      }
+      img.linkedin {
+        max-width: 40px !important;
+      }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media screen and (max-width : 480px) {
+      .footer {
+        height: 140px;
+      }
+    }
+
+    /* Custom, iPhone Retina */
+    @media screen and(max-width : 320px) {
+
+    }

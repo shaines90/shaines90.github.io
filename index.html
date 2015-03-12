@@ -4,27 +4,27 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
     <link rel="stylesheet" type="text/css" href="jquery.css">
-    <link rel="stylesheet" type="text/css" href="layout.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
     <TITLE>LPU TALKPUSH</TITLE>
   </head>
 
   <body ng-app="talk">
 
-    <div class="header">
+    <div class="header container-fluid">
       <div class="row">
         <h1>Welcome to LPUtalk</h1>
-        <h4>We’re here to help students of Lyceum of the Philippines University get their <br>voices heard by some of the top employers in the Philippines!</h4>
+        <h4>We’re here to help students of Lyceum of the Philippines University get theirvoices heard by some of the top employers in the Philippines!</h4>
       </div>
       <div class="row">
-        <div class="col-md-5"><img class="iconleft" src="../images/infografic-01.png"></div>
-        <div class="col-md-2"><img class="iconcenter" src="../images/infografic-02.png"></div>
-        <div class="col-md-5"><img class="iconright" src="../images/infografic-03.png"></div>
+        <div class="col-md-4"><img class="iconleft" src="../images/infografic-01.png"></div>
+        <div class="col-md-4"><img class="iconcenter" src="../images/infografic-02.png"></div>
+        <div class="col-md-4"><img class="iconright" src="../images/infografic-03.png"></div>
       </div>
     </div>
 
-    <div ng-controller="FormController">
+    <div ng-controller="FormController" class="container-fluid">
       <form name="myFormNg" action="sendpdf.php" method="post">
         <div class="start">
         <h2>TO START...</h2>
@@ -99,6 +99,18 @@
           <a href="contact-us.html" class="contactNav">CONTACT US</a>
         </div>
         <div class=".col-md-4 navTextRight">
+          <a href="terms-and-conditions.html">TERMS & CONDITIONS</a>
+        </div>
+      </div>
+
+      <div class="nav-media">
+        <div class=".col-md-4">
+          <a href="about-us.html">ABOUT US</a>
+        </div>
+        <div class=".col-md-4">
+          <a href="contact-us.html" class="contactNav">CONTACT US</a>
+        </div>
+        <div class=".col-md-4">
           <a href="terms-and-conditions.html">TERMS & CONDITIONS</a>
         </div>
       </div>
