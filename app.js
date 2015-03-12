@@ -35,7 +35,7 @@ var app = angular.module("talk", [])
       contactData = $scope.contactForm;
     };
 
-    $scope.submitForm = function() {
+    $scope.submitContactForm = function() {
       console.log("posting data....");
       contactData = $scope.form;
       console.log(contactData);
