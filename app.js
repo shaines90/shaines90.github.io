@@ -3,12 +3,11 @@ var app = angular.module("talk", [])
     var formData = {
       firstName: "default",
       lastName: "default",
-      fullName: "default",
       email: "default",
       phoneNumber: "default",
       degree: "default",
       options: "default",
-      temsConditions: "default",
+      termsConditions: "default",
     };
 
     $scope.save = function() {
@@ -24,4 +23,22 @@ var app = angular.module("talk", [])
       formData = $scope.form;
       console.log(formData);
     };
+
+  app.controller("ContactController", function($scope, $http) {
+    var contactData = {
+      fullName: "default",
+      contactEmail: "default",
+      contactContent: "default",
+    };
+
+    $scope.save = function() {
+      contactData = $scope.contactForm;
+    };
+
+    $scope.submitForm = function() {
+      console.log("posting data....");
+      contactData = $scope.form;
+      console.log(contactData);
+    };
+
 });

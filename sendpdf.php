@@ -71,7 +71,7 @@ if(!$mail->Send()) {
 }
 
 // Redirect to next page
-header('Location: thanks.html');
+header('Location: index.html');
 
 
 ?>

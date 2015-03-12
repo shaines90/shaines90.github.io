@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="custom.css">
-    <link rel="stylesheet" type="text/css" href="jquery.css">
-    <link rel="stylesheet" type="text/css" href="layout.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
-    <TITLE>Contact Us</TITLE>
-  </head>
-
   <body ng-app="talk">
     <div class="header">
       <div class="row">
@@ -19,7 +9,7 @@
     </div>
 
     <form name="contactFormNg" method="post">
-      <div class="start">
+      <div class="start" ng-controller="ContactController as ContactCtrl">
         <div class="contactFields">
           <div class="form-group">
             <input class="form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" type="text" name="fullName" ng-model="contactForm.fullName" placeholder="Full Name" required>
