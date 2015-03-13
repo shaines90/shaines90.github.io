@@ -149,11 +149,11 @@ h5 {
 }
 
 /*Radio Button Styling*/
-input[type="radio"], input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-input[type="radio"] + span {
+input[type="checkbox"] + span {
   background-color: white;
   border: 1px solid rgb(139,27,29);
   margin-left: 5px;
@@ -161,7 +161,7 @@ input[type="radio"] + span {
   padding: 20px 40px;
 }
 
-input[type="radio"]:checked + span {
+input[type="checkbox"]:checked + span {
   background-color: rgb(139,27,29);
   color: white;
   margin-left: 5px;
@@ -239,3 +239,57 @@ input[type="radio"]:checked + span {
 .companies {
   max-width: 100%;
 }
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  max-height: 100px; /* little bit of a magic number :( */
+  opacity: 1;
+  overflow: visible;
+}
+
+.reveal-if-active {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.5s;
+  input[type="radio"]:checked ~ &,
+  input[type="checkbox"]:checked ~ & {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
+    padding: 10px 20px;
+    transform: scale(1);
+  }
+}
+
+#reveal-if-active {
+  width: 440px;
+  height: 80px;
+}
+
+.arrow-up {
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid rgb(139,27,29);
+  margin: auto;
+  padding-top: 20px;
+  height: 0;
+  width: 0;
+}
+
+.clickBoxActive {
+  content: 'SUBMIT';
+  background-color: green !important;
+}
+
+.clickBoxActive {
+  content: 'YOU MUST ACCEPT FIRST!';
+  background-color: gray !important;
+}
+

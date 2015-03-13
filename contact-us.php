@@ -8,7 +8,7 @@
 // GRAB ALL VARIABLES
 $fullName = $_POST['fullName'];
 $contactEmail = $_POST['contactEmail'];
-$content = $_POST['content'];
+$contactContent = $_POST['contactContent'];
 
 // SEND OUT THE E-MAIL WITH THAT PDF
 require_once('PHPMailer/class.phpmailer.php');
@@ -16,7 +16,7 @@ $mail = new PHPMailer(); // defaults to using php "mail()"
 $body =
       "Name: $fullName<BR><BR>".
       "Email: $contactEmail <BR><BR>".
-      "Message: $content <BR>"; // Here is the body content
+      "Message: $contactContent <BR>"; // Here is the body content
 
 $mail->AddReplyTo("hello@talkpush.com","Talkpush System");
 $mail->SetFrom('hello@talkpush.com', 'Talkpush System');
@@ -31,6 +31,6 @@ if(!$mail->Send()) {
 }
 
 // Redirect to next page
-header('Location: index.html');
+header('Location: http://www.lputalk.com/');
 ?>
 

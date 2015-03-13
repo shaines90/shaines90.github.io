@@ -9,6 +9,15 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
     <TITLE>LPUtalk</TITLE>
     <link rel="shortcut icon" href="/favicon.ico">
+    <script type="text/javascript">
+      function UncheckAll(){
+        var w = document.getElementsByTagName('input');
+        for(var i = 0; i < w.length; i++){
+          if(w[i].type=='checkbox'){
+            w[i].checked = false;
+          }
+        }
+  }</script>
   </head>
 
   <body ng-app="talk">
@@ -62,18 +71,21 @@
           <h3>I'd like to work for</h3>
           <div class="radioSelect" required>
             <label class="bpo">
-              <input type="radio" name="dreamJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="BPO">
+              <input type="checkbox" name="bpoJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="BPO">
               <span>Business Process Outsourcing (BPO)</span>
             </label>
             <label class="hrm">
-              <input type="radio" name="dreamJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="HRM">
+              <input type="checkbox" name="hrmJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="HRM">
               <span>Hotel & Restaurant Management (HRM)</span>
             </label>
           </div>
           <div class="radioSelect">
             <label class="other">
-              <input type="radio" name="dreamJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="Other">
+              <input type="checkbox" name="otherJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="Other">
               <span>Other</span>
+              <div class="reveal-if-active">
+                <div class="arrow-up"></div>
+                <input class="form-group form-control form-control-lg ng-pristine ng-invalid ng-invalid-required" name="otherDreamJob" id="reveal-if-active" type="text">
             </label>
           </div>
         </div>
@@ -83,13 +95,13 @@
           <h3>Please read and agree to our <a href="terms-and-conditions.html" target="_blank">terms & conditions</a>.</h3>
           <div class="radioSelect">
             <label class="termsConditions">
-              <input type="radio" name="termsConditions" ng-model="myForm.termsConditions" ng-options="obj.id as obj.name for obj in myForm.temsConditions" value="termsConditions" required>
+              <input type="checkbox" name="termsConditions" ng-model="myForm.termsConditions" id="ftos" required>
               <span>I AGREE TO THE ABOVE TERMS AND CONDITIONS</span>
             </label>
           </div>
         </div>
 
-        <input class="button" type="submit" value="SUBMIT" />
+        <input class="button" type="submit" value="SUBMIT" id="fsubmit">
       </form>
     </div>
 
