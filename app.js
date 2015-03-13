@@ -1,28 +1,3 @@
-$(document).ready(function(){
-  $('#ftos').click(function(){
-    if($(this).attr('checked') == false){
-       $('#fsubmit').attr("disabled","disabled");
-    } else {
-      $('#fsubmit').removeAttr('disabled');
-    }
-  });
-});
-
-var checkboxes = document.getElementsByTagName('termsConditions');
-
-for (var i=0; i<checkboxes.length; i++)  {
-  if (checkboxes[i].type == 'checkbox')   {
-    checkboxes[i].checked = false;
-  }
-}
-
-$(document).ready(function() {
-  $('#ftos').change(function(){ // when checkbox check status changed
-    if($(this).is(':checked'))                // if it is checked
-      $('#fsubmit').removeAttr('disabled'); // remove the disabled attribute from submit button
-  });
-});
-
 var app = angular.module("talk", [])
   app.controller("FormController", function($scope, $http) {
     var formData = {
@@ -65,5 +40,5 @@ var app = angular.module("talk", [])
       contactData = $scope.form;
       console.log(contactData);
     };
-
+  });
 });
