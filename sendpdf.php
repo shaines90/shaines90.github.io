@@ -17,11 +17,10 @@ if (isset($_POST['otherJob'])) {$otherJob = $_POST['otherJob'];}
 if (isset($_POST['otherDreamJob'])) {$otherDreamJob = $_POST['otherDreamJob'];}
 
 // DEFINE THE HTML THAT WILL BE CONVERTED INTO THE PDF
-$content = 	"The first name is $firstName<BR>".
-			"The last name is $lastName <BR>".
-			"The email is $email <BR>".
-			"The phone number is $phoneNumber <BR>".
-			"The degree name is $degree <BR><BR>";
+$content = 	"Name: $firstName $lastName<BR>".
+			"Email: $email <BR>".
+			"Number: $phoneNumber <BR>".
+			"Degree: $degree <BR><BR>";
 $maxContent = $content."Their other dream job would be: ".$otherDreamJob;
 
 
