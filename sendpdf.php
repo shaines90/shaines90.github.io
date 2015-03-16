@@ -55,7 +55,7 @@ if (isset($_POST['bpoJob'])){
   $BPOJobMail->SetFrom('hello@talkpush.com', 'Talkpush System');
   $BPOJobMail->Subject = "LPU candidate";
   $BPOJobMail->AddAttachment($pdfname);      // attachment
-  $BPOJobMail->AddAddress("sophia.haines@talkpush.com", "");
+  $BPOJobMail->AddAddress("14f1514ed4fec2de74834a8609e0d189@inbound.talkpush.com", "");
   $BPOJobMail->MsgHTML('.');
 
   if(!$BPOJobMail->Send()) {
@@ -71,7 +71,7 @@ if (isset($_POST['hrmJob'])){
   $HRMJobMail->SetFrom('hello@talkpush.com', 'Talkpush System');
   $HRMJobMail->Subject = "LPU candidate";
   $HRMJobMail->AddAttachment($pdfname);      // attachment
-  $HRMJobMail->AddAddress("sophia.haines@talkpush.com", "");
+  $HRMJobMail->AddAddress("351834104fc2723f916855531d136ba6@inbound.talkpush.com", "");
   $HRMJobMail->MsgHTML('.');
 
   if(!$HRMJobMail->Send()) {

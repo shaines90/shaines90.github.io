@@ -2,6 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script type="text/javascript" src="preload.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
@@ -9,15 +12,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet' type='text/css'>
     <TITLE>LPUtalk</TITLE>
     <link rel="shortcut icon" href="/favicon.ico">
-    <script type="text/javascript">
-      function UncheckAll(){
-        var w = document.getElementsByTagName('input');
-        for(var i = 0; i < w.length; i++){
-          if(w[i].type=='checkbox'){
-            w[i].checked = false;
-          }
-        }
-  }</script>
   </head>
 
   <body ng-app="talk">
@@ -95,13 +89,13 @@
           <h3>Please read and agree to our <a href="terms-and-conditions.html" target="_blank">terms & conditions</a>.</h3>
           <div class="radioSelect">
             <label class="termsConditions">
-              <input type="checkbox" name="termsConditions" ng-model="myForm.termsConditions" id="ftos" required>
+              <input type="checkbox" name="termsConditions" ng-model="myForm.termsConditions" id="tc" required>
               <span>I AGREE TO THE ABOVE TERMS AND CONDITIONS</span>
             </label>
           </div>
         </div>
 
-        <input class="button" type="submit" value="SUBMIT" id="fsubmit">
+        <button class="button" type="submit">YOU MUST ACCEPT THE TERMS & CONDITIONS TO CONTINUE</button>
       </form>
     </div>
 
@@ -142,7 +136,6 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>

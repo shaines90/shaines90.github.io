@@ -95,7 +95,9 @@ h5 {
   background-color: rgb(139,27,29);
   width: 100%;
   padding-bottom: 5px;
+  margin-top: -20px;
 }
+
 .iconleft {
   float: right;
   max-width: 220px;
@@ -185,8 +187,8 @@ input[type="checkbox"]:checked + span {
 }
 
 .button {
-  background-color: rgb(139,27,29);
-  border: 1px solid rgb(139,27,29) !important;
+  background-color: #E8DDDE;
+  border:none;
   color: white;
   margin-left: 5px !important;
   margin-right: 5px !important;

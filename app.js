@@ -14,31 +14,9 @@ var app = angular.module("talk", [])
       formData= $scope.myForm;
     };
 
-    $scope.save = function() {
-      formData= $scope.contactForm;
-    };
-
     $scope.submitForm = function() {
       console.log("posting data....");
       formData = $scope.form;
       console.log(formData);
     };
-
-  app.controller("ContactController", function($scope, $http) {
-    var contactData = {
-      fullName: "default",
-      contactEmail: "default",
-      contactContent: "default",
-    };
-
-    $scope.save = function() {
-      contactData = $scope.contactForm;
-    };
-
-    $scope.submitContactForm = function() {
-      console.log("posting data....");
-      contactData = $scope.form;
-      console.log(contactData);
-    };
   });
-});
