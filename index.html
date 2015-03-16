@@ -65,17 +65,17 @@
           <h3>I'd like to work for</h3>
           <div class="radioSelect" required>
             <label class="bpo">
-              <input type="checkbox" name="bpoJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="BPO">
+              <input type="checkbox" name="bpoJob" value="BPO">
               <span>Business Process Outsourcing (BPO)</span>
             </label>
             <label class="hrm">
-              <input type="checkbox" name="hrmJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="HRM">
+              <input type="checkbox" name="hrmJob" value="HRM">
               <span>Hotel & Restaurant Management (HRM)</span>
             </label>
           </div>
           <div class="radioSelect">
             <label class="other">
-              <input type="checkbox" name="otherJob" ng-model="myForm.job" ng-options="obj.id as obj.name for obj in myForm.options" value="Other">
+              <input type="checkbox" name="otherJob" value="Other">
               <span>Other</span>
               <div class="reveal-if-active">
                 <div class="arrow-up"></div>
