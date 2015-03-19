@@ -96,6 +96,6 @@ if (isset($_POST['otherJob'])){
 }
 
 // Redirect to next page
-header('Location: http://www.lputalk.com/');
+header('Location: http://www.lputalk.com');
 ?>
 

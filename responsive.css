@@ -1,19 +1,26 @@
     /*==========  Non-Mobile First Method  ==========*/
 
     /* Large Devices, Wide Screens */
-    @media screen and (max-width : 1200px) {
+    @media only screen and (max-width : 1200px), only screen and (max-device-width: 1200px) {
 
     }
-    @media screen and (max-width : 1070px) {
+    @media only screen and (max-width : 1070px), only screen and (max-device-width: 1070px) {
       .iconright {
         float: center !important;
       }
 
     /* Medium Devices, Desktops */
-    @media screen and (max-width : 992px) {
+    @media only screen and (max-width : 992px), only screen and (max-device-width: 992px) {
       .iconleft {
         float: left;
         max-width: 200px;
+      }
+      input[type="checkbox"] + span {
+        background-color: white;
+        border: 2px solid rgb(139,27,29);
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 20px 40px;
       }
       .iconright {
         float: left;
@@ -41,12 +48,13 @@
       }
       .radioSelect {
         margin: 0;
+        margin-bottom: 50px;
       }
 
     }
 
     /* Small Devices, Tablets */
-    @media screen and (max-width : 768px) {
+    @media only screen and (max-width : 768px), only screen and (max-device-width: 768px) {
       h4 {
         font-size: 16px;
         line-height: 1.3em;
@@ -129,12 +137,142 @@
     }
 
     /* Extra Small Devices, Phones */
-    @media screen and (max-width : 480px) {
+    @media only screen and (max-width : 480px), only screen and (max-device-width: 480px) {
       .footer {
         height: 140px;
       }
+      .form-control {
+        border: 3px solid rgb(139,27,29) !important;
+        border-radius: 0;
+        height: auto;
+        margin-bottom: 22px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 80%;
+        padding: 20px 30px !important;
+      }
+      .header {
+        margin-top: -60px;
+        padding-right: 20px;
+      }
+      h4 {
+        font-size: 11px;
+        line-height: 1.2em;
+        margin: auto;
+        max-width: 70%;
+        padding-bottom: 30px;
+        text-align: center;
+      }
+      .mobileh3 {
+        font-size: 11px;
+      }
+      .dreamjob h2 {
+        font-size: 10px;
+      }
+      .readtc {
+        max-width: 75%;
+        margin: auto;
+        padding-top: 30px;
+        line-height: 1em;
+      }
+      .iconleft {
+        float: none !important;
+        margin-bottom: -50px;
+        margin-left: 0;
+        max-width: 250px;
+      }
+      .iconcenter {
+        float: none !important;
+        margin-left: 0;
+        max-width: 250px;
+      }
+      .iconright {
+        float: none !important;
+        margin-left: 0;
+        max-width: 250px;
+        margin-bottom: 5px;
+      }
+
+      .start {
+        padding: 0;
+      }
+      .potentialEmployers {
+        margin-top: 0 !important;
+      }
+
+      .degree {
+        max-width: 95%;
+      }
+
+      .dreamjob {
+        padding: 0;
+      }
+
+      .footer {
+        padding-top: 10px;
+      }
+      .lyceumLogo {
+        margin-left: 20px;
+        margin-top: 5px;
+        max-width: 55px;
+      }
+      .talkpushLogo {
+        margin-left: 20px;
+        margin-top: 20px;
+        max-height: 75px;
+        max-width: 75px;
+      }
+      .nav {
+        display: none;
+      }
+      .nav-media {
+        display: inline;
+        padding-top: 5px;
+        text-align: center;
+      }
+      .contactNav {
+        margin-left: 0;
+      }
+      .socialMedia {
+        float: right;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      img.facebook {
+        max-width: 40px !important;
+      }
+      img.twitter {
+        max-width: 40px !important;
+      }
+      img.linkedin {
+        max-width: 40px !important;
+      }
+    }
     }
 
     /* Custom, iPhone Retina */
-    @media screen and(max-width : 320px) {
+    @media only screen and(max-width : 320px), only screen and (max-device-width: 320px) {
+      input[type="checkbox"] + span {
+        margin-bottom: 20px;
+        margin-top: 60px;
+      }
+      h1 {
+        font-size: 50px;
+        margin-top: 50px;
+      }
+      .dreamjob h2 {
+        font-size: 30px;
+      }
+      .dreamjob h3 {
+        padding-bottom: 30px;
+      }
+      h4 {
+        font-size: 25px;
+      }
+      .mobileh3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 18px;
+      }
     }
