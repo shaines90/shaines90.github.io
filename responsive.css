@@ -141,6 +141,9 @@
       .footer {
         height: 140px;
       }
+      .fastcoInfo {
+        font-size:  15px !important;
+      }
       .form-control {
         border: 3px solid rgb(139,27,29) !important;
         border-radius: 0;
@@ -248,7 +251,7 @@
         max-width: 40px !important;
       }
     }
-    }
+  }
 
     /* Custom, iPhone Retina */
     @media only screen and(max-width : 320px), only screen and (max-device-width: 320px) {
