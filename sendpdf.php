@@ -13,11 +13,13 @@ if (isset($_POST['phoneNumber'])) {$phoneNumber = $_POST['phoneNumber'];}
 if (isset($_POST['degree'])) {$degree = $_POST['degree'];}
 if (isset($_POST['bpoJob'])) {$bpoJob = $_POST['bpoJob'];}
 if (isset($_POST['hrmJob'])) {$hrmJob = $_POST['hrmJob'];}
+if (isset($_POST['itJob'])) {$bpoJob = $_POST['itJob'];}
 if (isset($_POST['otherJob'])) {$otherJob = $_POST['otherJob'];}
 if (isset($_POST['otherDreamJob'])) {$otherDreamJob = $_POST['otherDreamJob'];}
 
 // DEFINE THE HTML THAT WILL BE CONVERTED INTO THE PDF
-$content = 	"Name: $firstName $lastName<BR>".
+$content = 	"You have received a new contact from LPUtalk.<BR>".
+      "Name: $firstName $lastName<BR>".
 			"Email: $email <BR>".
 			"Number: $phoneNumber <BR>".
 			"Degree: $degree <BR><BR>";
@@ -80,12 +82,28 @@ if (isset($_POST['hrmJob'])){
   }
 }
 
+if (isset($_POST['itJob'])){
+  $itJobMail = new PHPMailer(); // defaults to using php "mail()"
+  $itJobMail->AddReplyTo("hello@talkpush.com","Talkpush System");
+  $itJobMail->SetFrom('hello@talkpush.com', 'Talkpush System');
+  $itJobMail->Subject = "LPU candidate";
+  $itJobMail->AddAttachment($pdfname);      // attachment
+  $itJobMail->AddAddress("b99af6fad65d6967624bd27053b25e2d@inbound.talkpush.com", "");
+  $itJobMail->MsgHTML('.');
+
+  if(!$itJobMail->Send()) {
+    echo "Mailer Error: " . $HRMJobMail->ErrorInfo;
+  } else {
+    //  echo "Message sent!";
+  }
+}
+
 if (isset($_POST['otherJob'])){
   $otherJobMail = new PHPMailer(); // defaults to using php "mail()"
   $otherJobMail->AddReplyTo("hello@talkpush.com","Talkpush System");
   $otherJobMail->SetFrom('hello@talkpush.com', 'Talkpush System');
   $otherJobMail->Subject = "LPU candidate";
-  $otherJobMail->AddAddress("sophia.haines@talkpush.com", "");
+  $otherJobMail->AddAddress("hello@talkpush.com", "Other Job Requested");
   $otherJobMail->MsgHTML($maxhtml);
 
   if(!$otherJobMail->Send()) {
@@ -96,6 +114,6 @@ if (isset($_POST['otherJob'])){
 }
 
 // Redirect to next page
-header('Location: http://www.lputalk.com');
+header('Location: http://www.lputalk.com/next-step.html');
 ?>
 

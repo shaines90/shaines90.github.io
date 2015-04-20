@@ -185,7 +185,7 @@ input[type="checkbox"]:checked + span {
 }
 
 .radioSelect {
-  margin-bottom: 45px;
+  margin-bottom: 75px;
   margin-top: 25px;
 }
 
@@ -253,7 +253,7 @@ input[type="checkbox"]:checked + span {
 
 .tc {
   text-align: left;
-  max-width: 70%;
+  max-width: 700px;
   margin: auto;
   margin-bottom: 30px;
   margin-top: 30px;
@@ -300,13 +300,14 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 #reveal-if-active {
   width: 440px;
   height: 80px;
+  margin-left: 47% !important;
 }
 
 .arrow-up {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-bottom: 20px solid rgb(139,27,29);
-  margin: auto;
+  margin-left: 62%;
   padding-top: 20px;
   height: 0;
   width: 0;
@@ -322,3 +323,6 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   background-color: gray !important;
 }
 
+label {
+ display: inline !important;
+}

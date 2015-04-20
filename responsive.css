@@ -21,6 +21,24 @@
         margin-left: 5px;
         margin-right: 5px;
         padding: 20px 40px;
+        font-size: 12px;
+      }
+      input[type="checkbox"] + span {
+        background-color: white;
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
+      }
+      input[type="checkbox"]:checked + span {
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
       }
       .iconright {
         float: left;
@@ -30,6 +48,9 @@
         float: left;
         margin-left: 70px;
         max-width: 200px;
+      }
+      .tc {
+        max-width: 90% !important;
       }
       .dreamjob {
         padding: 0;
@@ -55,6 +76,23 @@
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px), only screen and (max-device-width: 768px) {
+      input[type="checkbox"] + span {
+        background-color: white;
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
+      }
+      input[type="checkbox"]:checked + span {
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
+      }
       h4 {
         font-size: 16px;
         line-height: 1.3em;
@@ -93,6 +131,10 @@
 
       .dreamjob {
         padding: 0;
+      }
+
+      .tc {
+        max-width: 90% !important;
       }
 
       .footer {
@@ -138,6 +180,24 @@
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width : 480px), only screen and (max-device-width: 480px) {
+      input[type="checkbox"] + span {
+        background-color: white;
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
+      }
+      input[type="checkbox"]:checked + span {
+        border: 2px solid rgb(139,27,29);
+        margin: auto;
+        margin-top: 10px;
+        padding: 20px 40px;
+        width: 80%;
+        display: block;
+      }
+
       .footer {
         height: 140px;
       }
@@ -258,6 +318,8 @@
       input[type="checkbox"] + span {
         margin-bottom: 20px;
         margin-top: 60px;
+        font-size: 12px;
+        float: left;
       }
       h1 {
         font-size: 50px;
@@ -265,6 +327,9 @@
       }
       .dreamjob h2 {
         font-size: 30px;
+      }
+      .tc {
+        max-width: 90% !important;
       }
       .dreamjob h3 {
         padding-bottom: 30px;
