@@ -1,1 +1,1 @@
-# talklyceum
+# LPUtalk

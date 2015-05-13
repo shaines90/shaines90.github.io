@@ -9,7 +9,7 @@ error_reporting(-1);
 if (isset($_POST['firstName'])) {$firstName = $_POST['firstName'];}
 if (isset($_POST['lastName'])) {$lastName = $_POST['lastName'];}
 if (isset($_POST['email'])) {$email = $_POST['email'];}
-if (isset($_POST['phoneNumber'])) {$phoneNumber = $_POST['phoneNumber'];}
+if (isset($_POST['mobileNumber'])) {$mobileNumber = $_POST['mobileNumber'];}
 if (isset($_POST['degree'])) {$degree = $_POST['degree'];}
 if (isset($_POST['bpoJob'])) {$bpoJob = $_POST['bpoJob'];}
 if (isset($_POST['hrmJob'])) {$hrmJob = $_POST['hrmJob'];}
@@ -21,7 +21,7 @@ if (isset($_POST['otherDreamJob'])) {$otherDreamJob = $_POST['otherDreamJob'];}
 $content = 	"You have received a new contact from LPUtalk.<BR>".
       "Name: $firstName $lastName<BR>".
 			"Email: $email <BR>".
-			"Number: $phoneNumber <BR>".
+			"Mobile: $mobileNumber <BR>".
 			"Degree: $degree <BR><BR>";
 $maxContent = $content."Their other dream job would be: ".$otherDreamJob;
 

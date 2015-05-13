@@ -4,7 +4,7 @@ var app = angular.module("talk", [])
       firstName: "default",
       lastName: "default",
       email: "default",
-      phoneNumber: "default",
+      mobileNumber: "default",
       degree: "default",
       options: "default",
       termsConditions: "default",
